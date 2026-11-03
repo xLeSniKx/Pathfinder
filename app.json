@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Pathfinder",
+    "slug": "BikeTracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/my-icon.png",
+    "scheme": "biketracker",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/images/my-icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#2b2b2b",
+        "foregroundImage": "./assets/images/my-icon.png",
+        "backgroundImage": "./assets/images/my-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.xlesnikx.BikeTracker",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/my-icon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Разрешить доступ к геолокации для точного отслеживания трека и тумана войны в фоновом режиме.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-image",
+      "expo-router",
+      "expo-splash-screen",
+      "expo-web-browser",
+      "expo-video"
+    ]
+  }
+}
